@@ -12,7 +12,9 @@
   "scripts": {
     "build": "tsc",
     "test": "mocha -r ts-node/register test/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write ."
   },
   "keywords": [
     "api",
@@ -26,8 +28,13 @@
   "devDependencies": {
     "@types/mocha": "^10.0.7",
     "@types/node": "^20.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
     "mocha": "10.7.3",
     "nock": "13.5.5",
+    "prettier": "^2.8.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
