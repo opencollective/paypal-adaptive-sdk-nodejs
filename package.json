@@ -1,27 +1,40 @@
 {
-    "name" : "paypal-adaptive",
-    "version": "0.4.1",
-    "author" : "Gonzalo Aguirre",
-    "description" : "Paypal Adaptive (Payments & Accounts) SDK in node.js",
-    "main": "./lib/paypal-adaptive.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gaguirre/paypal-adaptive-sdk-nodejs.git"
-    },
-    "keywords": [
-        "api"
-        , "paypal"
-        , "adaptive"
-        , "payments"
-        , "accounts"
-        , "sdk"
-        , "node"
-    ],
-    "devDependencies": {
-        "mocha": "1.10.0",
-        "nock": "0.18.2"
-    },
-    "engine" : {
-        "node": ">=0.6"
-    }
+  "name": "paypal-adaptive",
+  "version": "1.0.0",
+  "author": "Gonzalo Aguirre",
+  "description": "Paypal Adaptive (Payments & Accounts) SDK in node.js",
+  "main": "./dist/paypal-adaptive.js",
+  "types": "./dist/paypal-adaptive.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencollective/paypal-adaptive-sdk-nodejs.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "api",
+    "paypal",
+    "adaptive",
+    "payments",
+    "accounts",
+    "sdk",
+    "node"
+  ],
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.16.3",
+    "mocha": "10.7.3",
+    "nock": "13.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "engine": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "es-toolkit": "1.17.0"
+  }
 }
