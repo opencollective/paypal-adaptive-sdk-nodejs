@@ -1,12 +1,15 @@
 {
-    "name" : "paypal-adaptive",
-    "version": "0.4.1",
+    "name" : "@opencollectivepaypal-adaptive",
+    "version": "1.0.0",
     "author" : "Gonzalo Aguirre",
     "description" : "Paypal Adaptive (Payments & Accounts) SDK in node.js",
     "main": "./lib/paypal-adaptive.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/gaguirre/paypal-adaptive-sdk-nodejs.git"
+        "url": "https://github.com/opencollective/paypal-adaptive-sdk-nodejs.git"
+    },
+    "scripts": {
+        "test": "mocha test/**/*.js"
     },
     "keywords": [
         "api"
@@ -18,10 +21,10 @@
         , "node"
     ],
     "devDependencies": {
-        "mocha": "1.10.0",
-        "nock": "0.18.2"
+        "mocha": "10.7.3",
+        "nock": "13.5.5"
     },
     "engine" : {
-        "node": ">=0.6"
+        "node": ">=14.0"
     }
 }
