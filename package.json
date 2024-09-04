@@ -1,5 +1,5 @@
 {
-    "name" : "@opencollectivepaypal-adaptive",
+    "name" : "@opencollective/paypal-adaptive",
     "version": "1.0.0",
     "author" : "Gonzalo Aguirre",
     "description" : "Paypal Adaptive (Payments & Accounts) SDK in node.js",
